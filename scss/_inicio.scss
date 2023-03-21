@@ -1,238 +1,120 @@
-.fondo-color {
-  background-color: rgb(229 231 235);
-}
 
+@media (max-width: 768px){
 
-.contenedor-descuentos{
-  height: 70vh;
-  width: 100%;
-  .title-discounts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 18px;
+  .fondo-color {
+    background-color: rgb(229 231 235);
+  }
+
+  .contenedorPolicies {
+    height: 120vh;
+    width: 100%;
+    h1 {
+      color: #313131;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20px;
+    }
+    .contenedor-cajas {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // justify-content: space-around;
+      flex-direction: column;
+      height: 100vh;
+      padding-top: 50px;
+      .card {
+        height: 38vh;
+        width: 220px;
+        background-color: whitesmoke;
+        transition: 0.3s;
+        margin: 20px;
+        &:hover {
+          border-radius: 2px;
+          transform: scale();
+          box-shadow: 0px 0px 10px 0px #313131;
+        }
+        .circle {
+          background-color: rgb(229 231 235);
+          height: 5rem;
+          width: 5rem;
+          border-radius: 9999px;
+          border-top: #313131 2px solid;
+          border-left: #313131 2px solid;
+          border-right: #313131 2px solid;
+          border-bottom: #313131 2px solid;
   
-  h1{
-    color: #313131;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-  }
-  }
-  .contenedor-targetas-descuentos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
-    // justify-content: space-around;
-    .target{
-      background-color: rgb(251 146 60);
-      width: 240px;
-      height: 180px;
-      margin: 50px;
-      // transition: .4s;
-      transition: .5s;
-      border-radius: 3px;
-      &:hover{
-        background-color: rgb(251 106 60);
-        transition: .3s;
-        transform: skewX(-20deg);
-        // background-color: rgb(239 68 68);
-      }
-      .izq{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1.25rem;
-      h3{
-        font-size: 1.175rem;
-        color: whitesmoke;
-
-
-      }
-      .precio-1{
-        display: block;
-        margin-left: 120px;
-        margin-top: 30px;
-        .original{
-          color: #313131c5;
-          margin-left: 12px;
-          text-decoration-line: line-through;
+          .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding-top: 20px;
+            
+            img {
+              width: 60px;
+              height: 40px;
+            }
+          }
+  
         }
-        .oferta{
-          font-size: 20px;
-          color: rgba(245, 245, 245, 0.765);
-          
-        }
+        .despacho{
+          color: #313131;
+          font-size: 17px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          padding-left: 10px;
+          width: 100%;
       }
-    } 
-    .zapa-boton{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-      img{
-        height: 4rem;
-        
-      
-    }
-      button{
-        background-color: #212121;
-        color: rgb(224, 223, 223);
-        height: 40px;
-        width: 80px;
-        border: none;
-        border-radius: 1px;
-        &:hover{
-          background-color: #313131;
-          transition: .3s;
-          color: white;
+        .texto {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 0px;
+          p {
+            color: #313131;
+            font-family: sans-serif;
+            width: 30%;
+            font-weight: bold;
+            font-size: 19px;
+          }
+        }
+        .boton {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 15px;
+          padding-bottom: 3px;
+          button {
+            background-color: rgb(0 112 140);
+            border: none;
+            border-radius: 3px;
+            width: 150px;
+            height: 50px;
+            color: whitesmoke;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: sans-serif;
+            &:hover {
+              background-color: rgb(1, 87, 109);
+              transition: 0.2s;
+            }
+          }
         }
       }
-    }
-
-    }
-    .target-2{
-      background-color: rgb(248 113 113);
-      width: 240px;
-      height: 180px;
-      margin: 50px;
-      // transition: .4s;
-      transition: .5s;
-      border-radius: 3px;
-      &:hover{
-        background-color: rgb(230, 80, 57);
-        transition: .3s;
-        transform: skewX(-20deg);
-        // background-color: rgb(239 68 68);
-      }
-      .izq{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1.25rem;
-      h3{
-        font-size: 1.175rem;
-        color: whitesmoke;
-
-
-      }
-      .precio-1{
-        display: block;
-        margin-left: 120px;
-        margin-top: 30px;
-        .original{
-          color: #313131c5;
-          margin-left: 12px;
-          text-decoration-line: line-through;
-        }
-        .oferta{
-          font-size: 20px;
-          color: rgba(245, 245, 245, 0.765);
-          
-        }
-      }
-    } 
-    .zapa-boton{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-      img{
-        height: 4rem;
-        
-      
-    }
-      button{
-        background-color: #212121;
-        color: rgb(224, 223, 223);
-        height: 40px;
-        width: 80px;
-        border: none;
-        border-radius: 1px;
-        &:hover{
-          background-color: #313131;
-          transition: .3s;
-          color: white;
-        }
-      }
-    }
-    }
-  }
-}
-
-
-.target-3{
-  background-color: rgb(172 188 207);
-  width: 240px;
-  height: 180px;
-  margin: 50px;
-  // transition: .4s;
-  transition: .5s;
-  border-radius: 3px;
-  &:hover{
-    background-color: rgb(137, 149, 164);
-    transition: .3s;
-    transform: skewX(-20deg);
-    // background-color: rgb(239 68 68);
-  }
-  .izq{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.25rem;
-  h3{
-    font-size: 1.175rem;
-    color: whitesmoke;
-
-
-  }
-  .precio-1{
-    display: block;
-    margin-left: 120px;
-    margin-top: 30px;
-    .original{
-      color: #313131c5;
-      margin-left: 12px;
-      text-decoration-line: line-through;
-    }
-    .oferta{
-      font-size: 20px;
-      color: rgba(245, 245, 245, 0.765);
-      
     }
   }
 } 
-.zapa-boton{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  img{
-    height: 4rem;
-    
   
-}
-  button{
-    background-color: #212121;
-    color: rgb(224, 223, 223);
-    height: 40px;
-    width: 80px;
-    border: none;
-    border-radius: 1px;
-    &:hover{
-      background-color: #313131;
-      transition: .3s;
-      color: white;
-    }
-  }
-}
-}
 
+@media (min-width: 768px){
 
-
+.fondo-color {
+  background-color: rgb(229 231 235);
+}
 
 .contenedorPolicies {
   height: 80vh;
@@ -331,4 +213,6 @@
       }
     }
   }
+}
+
 }

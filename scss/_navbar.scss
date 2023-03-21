@@ -1,40 +1,46 @@
+@media (max-width: 768px){
 .contenedor-navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 50px;
+  min-height: 80px;
   .logo {
-    margin-left: 15px;
+    padding-bottom: 20px;
     img {
       width: 60px;
       height: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
-
   }
-  button{
+  button {
+
     margin-right: 550px;
     width: 60px;
     height: 30px;
     border-radius: 7px;
     border: none;
     color: rgba(182, 9, 9, 0.837);
-    &:hover{
-        background-color: rgba(128, 128, 128, 0.341);
-        transition: 0.7s;
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.341);
+      transition: 0.7s;
     }
-}
+
+  }
   nav {
     margin-right: 10px;
     a {
-        padding: 17px;
-        color: #313131;
-        font-size: 19px;
-        font-family: sans-serif;
-        &:hover{
-            color: rgba(182, 9, 9, 0.837);
-            transition: .3s;
-        }
+      padding: 6px;
+      color: #313131;
+      font-size: 19px;
+      font-family: sans-serif;
+      &:hover {
+        color: rgba(182, 9, 9, 0.837);
+        transition: 0.3s;
+      }
     }
   }
 }
@@ -65,12 +71,8 @@ header {
     font-weight: inherit;
     opacity: 0.9;
     margin-bottom: 23px;
-
   }
   h3 {
-
-    
-
     a {
       font-size: 28px;
       font-family: Arial, Helvetica, sans-serif;
@@ -78,11 +80,98 @@ header {
       letter-spacing: 1px;
       font-weight: inherit;
       border-bottom: 2px whitesmoke;
-      transition: .3s;
+      transition: 0.3s;
       opacity: 0.8;
       &:hover {
         opacity: 1;
         transform: scale(1.2);
+      }
+    }
+  }
+}
+}
+@media (min-width: 768px) {
+  .contenedor-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    .logo {
+      margin-left: 15px;
+      img {
+        width: 60px;
+        height: 20px;
+      }
+    }
+    button {
+      margin-right: 550px;
+      width: 60px;
+      height: 30px;
+      border-radius: 7px;
+      border: none;
+      color: rgba(182, 9, 9, 0.837);
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.341);
+        transition: 0.7s;
+      }
+    }
+    nav {
+      margin-right: 10px;
+      a {
+        padding: 17px;
+        color: #313131;
+        font-size: 19px;
+        font-family: sans-serif;
+        &:hover {
+          color: rgba(182, 9, 9, 0.837);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+  header {
+    width: 100%;
+    height: 100vh;
+    .foto {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(../img/danilo-capece-NoVnXXmDNi0-unsplash.jpg);
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .nike {
+      font-size: 47px;
+      font-family: rubik, sans-serif;
+      letter-spacing: 2px;
+      color: whitesmoke;
+      font-weight: inherit;
+      opacity: 0.9;
+      margin-bottom: 23px;
+    }
+    h3 {
+      a {
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: whitesmoke;
+        letter-spacing: 1px;
+        font-weight: inherit;
+        border-bottom: 2px whitesmoke;
+        transition: 0.3s;
+        opacity: 0.8;
+        &:hover {
+          opacity: 1;
+          transform: scale(1.2);
+        }
       }
     }
   }
