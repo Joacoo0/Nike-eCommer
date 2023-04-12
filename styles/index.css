@@ -66,17 +66,16 @@
     opacity: 0.9;
     margin-bottom: 23px;
   }
-  header h3 a {
+  header a {
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
     letter-spacing: 1px;
     font-weight: inherit;
-    border-bottom: 2px whitesmoke;
-    transition: 0.3s;
     opacity: 0.8;
+    transition: 0.5s;
   }
-  header h3 a:hover {
+  header a:hover {
     opacity: 1;
     transform: scale(1.2);
   }
@@ -145,17 +144,16 @@
     opacity: 0.9;
     margin-bottom: 23px;
   }
-  header h3 a {
-    font-size: 28px;
-    font-family: Arial, Helvetica, sans-serif;
+  header a {
+    font-size: 30px;
+    font-family: monospace;
     color: whitesmoke;
     letter-spacing: 1px;
     font-weight: inherit;
-    border-bottom: 2px whitesmoke;
-    transition: 0.3s;
     opacity: 0.8;
+    transition: 0.5s;
   }
-  header h3 a:hover {
+  header a:hover {
     opacity: 1;
     transform: scale(1.2);
   }

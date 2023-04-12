@@ -1,33 +1,51 @@
-let nombreApellido
-let dni
-let fechaNacimeinto
+const zapatillas = []
 
-function ingreseDatos(){
+alert ("!Hola¡ cual es su zapatilla nike favorita?")
+
+class zapatilla {
+  constructor (modelo, talle, edicion){
+    this.modelo = modelo
+    this.talle = talle
+    this.edicion = edicion
+  }
+}
+let continuar = true
+
+const buscarZapatilla = () =>{
+    let modelo
+    let talle
+    let edicion
+
     do{
-        nombreApellido = prompt("Ingrese su nombre e apellido")
-    }while (nombreApellido == ""){
-        alert ("Bienvenido " + " " + nombreApellido + " "+ "podes apretar el boton de aceptar para sacar un turno")
+        modelo = prompt("Cual modelo de zapatilla es su favorito")
+    }while(""){
+
+    }
+    do{
+        talle = prompt("cual es su talle?")
+    }while(isNaN("")){
+
+    }
+    do{
+        edicion = prompt("cual es su edicion favorita")
+    }while(""){
+
     }
 
-    do{
-    dni = prompt ("Ingrese su dni")
-    }while(isNaN(dni))
+    const zapa = new zapatilla (modelo,talle,edicion)
+    alert ("su eleccion fue:\n" + zapa.modelo + " " + "modelo\n" + zapa.talle + " " + "talle\n" + zapa.edicion + " " + "edicion\n")
 
-    do{
-    fechaNacimeinto = prompt ("ingrese su fecha de nacimiento")
-    }while(isNaN(fechaNacimeinto))
-}
-ingreseDatos()
+    zapatillas.push(zapa)
+    console.log (zapatillas)
 
-let repeat = true
-function sacarTurno(){
-    const dia = prompt ("ingrese el dia del turno")
-    const hora = prompt ("Ingrese la hora del turno")
-    const pago = prompt ("Ingrese la forma de pago / efectivo - mercado pago")
-    alert ("Gracias "+ nombreApellido + " sacaste turno para el dia " + dia + " para la hora " + hora + " y pagas con " + pago)
+    alert("Usted va agregando" + " " + zapatillas.length + " " + "zapatilla/s")
 }
 
-while (repeat){
-    sacarTurno()
-    repeat = confirm ("Desea sacar otro turno?")
+
+while(continuar){
+    buscarZapatilla()
+    continuar = confirm ("desea agregar otra zapatilla?")
 }
+
+alert ("has añadido" + " " + zapatillas.length + " zapatillas correctamente")
+alert ("!Terminaste¡ te puedes fijar en la consola tus zapatillas")
