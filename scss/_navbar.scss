@@ -163,9 +163,23 @@
       font-weight: inherit;
       opacity: 0.8;
       transition: .5s;
+      
       &:hover {
         opacity: 1;
         transform: scale(1.2);
+        animation: letter .6s;
+
+        @keyframes letter {
+          0%{
+            letter-spacing: 2px;
+          }
+          50%{
+            letter-spacing: 3px;
+          }
+          100%{
+            letter-spacing: 4px;
+          }
+        }
       }
     }
   }

@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "mfuentesg.vscode-protolint"
+        "mfuentesg.vscode-protolint",
+        "fisheva.eva-theme"
     ]
 }
