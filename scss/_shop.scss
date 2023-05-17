@@ -1,0 +1,121 @@
+.contenedor-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    .carrito-boton{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        p{
+            color: #212121;
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+    }
+    .title-shop{
+
+        display: flex;
+        justify-content: center;
+        h1{
+            color: #313131;
+            font-size: 40px;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 20px;
+            text-shadow: 0px 0px 30px #313131;
+        }
+    }
+}
+
+.conteiner-shop{
+    background-color: #212121;
+    padding: 2rem;
+    padding-right: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    .navbar-izq{
+        max-width: 100%;
+        .title-nav{
+            color: #f5f5f5;
+            font-size: 30px;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        .nav{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            #todos{
+                background-color: #f9f9f9;
+                color: #313131;
+            }
+            #zapa{
+                background-color: #f7f7f7;
+                color: #313131;
+            }
+            #cami{
+                background-color: #f7f7f7;
+                color: #313131;
+            }
+            #verCarrito{
+                background-color: #f9f9f9;
+                cursor: pointer;
+                color: #313131;
+                width: 150px;
+                font-size: 20px;
+                &:hover{
+                    background-color: #fff;
+                    color: #000;
+                    
+
+
+                }
+            }
+            a{
+
+                width: 100%;
+                color: #f7f7f7;
+                font-family: monospace;
+                font-size: .85rem;
+                font-weight: bold;
+                background-color: #313131;
+                border-radius: 15px;
+                margin: 20px;
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    background-color: #f9f9f9;
+                    color: #313131;
+                    transition: .5s;
+                }
+
+            }
+        }
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9f9f960;
+    
+}
