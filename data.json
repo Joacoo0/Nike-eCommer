@@ -3,67 +3,78 @@
     "id": 1,
     "nombre": "Air jordan 1 Mid",
     "precio": 200,
-    "img": "../img-shop/img-zapas/jordan-rojas.webp"
+    "img": "../img-shop/img-zapas/jordan-rojas.webp",
+    "cantidad": 1
   },
   {
     "id": 2,
     "nombre": "Nike air jordan negras y blancas",
     "precio": 190,
-    "img": "../img-shop/img-zapas/nike-air-jordan-1-negras-y-blancas.jpg"
+    "img": "../img-shop/img-zapas/nike-air-jordan-1-negras-y-blancas.jpg",
+    "cantidad": 1
   },
   {
     "id": 3,
     "nombre": "Air jordan 1 Mid",
     "precio": 210,
-    "img": "../img-shop/img-zapas/jordan-girse.jpg"
+    "img": "../img-shop/img-zapas/jordan-girse.jpg",
+    "cantidad": 1
   },
   {
     "id": 4,
     "nombre": "jordan 1 retro high white",
     "precio": 250,
-    "img": "../img-shop/img-zapas/jordan-celestes.webp"
+    "img": "../img-shop/img-zapas/jordan-celestes.webp",
+    "cantidad": 1
   },
   {
     "id": 5,
     "nombre": "Zapatillas Nike Air Max Pre-Day Se",
     "precio": 120,
-    "img": "../img-shop/img-zapas/NI_DH5111-100-1.jpg"
+    "img": "../img-shop/img-zapas/NI_DH5111-100-1.jpg",
+    "cantidad": 1
   },
   {
     "id": 6,
     "nombre": "Zapatillas Nike Air Force 1 High 07 Premium Unisex",
     "precio": 170,
-    "img": "../img-shop/img-zapas/15638382-800-auto.webp"
+    "img": "../img-shop/img-zapas/15638382-800-auto.webp",
+    "cantidad": 1
   },
   {
     "id": 7,
     "nombre": "camiseta de los lakers",
     "precio": 70,
-    "img": "../img-shop/img-camisetas/laker-nike.webp"
+    "img": "../img-shop/img-camisetas/laker-nike.webp",
+    "cantidad": 1
   },
   {
     "id": 8,
     "nombre": "camiseta jordan negra",
     "precio": 40,
-    "img": "../img-shop/img-camisetas/jordan-negra.webp"
+    "img": "../img-shop/img-camisetas/jordan-negra.webp",
+    "cantidad": 1
   },
   {
     "id": 8,
     "nombre": "camiseta nike blanca",
     "precio": 50,
-    "img": "../img-shop/img-camisetas/nike-blanca.webp"
+    "img": "../img-shop/img-camisetas/nike-blanca.webp",
+    "cantidad": 1
   },
   {
     "id": 8,
     "nombre": "camiseta nike rosa",
     "precio": 70,
-    "img": "../img-shop/img-camisetas/nike-rosa.webp"
+    "img": "../img-shop/img-camisetas/nike-rosa.webp",
+    "cantidad": 1
   },
   {
     "id": 8,
     "nombre": "camiseta del Psg blanca",
     "precio": 40,
-    "img": "../img-shop/img-camisetas/psg.webp"
+    "img": "../img-shop/img-camisetas/psg.webp",
+    "cantidad": 1
   }
 
 ]

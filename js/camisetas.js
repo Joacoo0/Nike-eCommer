@@ -1,6 +1,7 @@
 const shopProductos = document.getElementById ("shop")
 const verCarrito = document.getElementById ("verCarrito")
 const modalContaner = document.getElementById("modal-content")
+const cantidadCarrito = document.getElementById("cantidadCarrito")
 
 const mensaje = (mensaje) =>{
     Toastify({
@@ -39,16 +40,31 @@ const getProducts = async () => {
         content.append(comprar)
     
         comprar.addEventListener("click", () =>{
+            const repeat = carrito.some((repeatProduct)=> repeatProduct.id === product.id)
+            
+            if (repeat === true){
+                carrito.map((prod)=>{
+                    if(prod.id === product.id){
+                        prod.cantidad++
+                    }
+                })
+            }else {
+
             carrito.push({
                 id : product.id,
                 img : product.img,
                 nombre : product.nombre,
                 precio : product.precio,
+                cantidad: product.cantidad,
             })
+        }
             console.log(carrito)
+            carritoCounter()
             local()
             mensaje("Producto agregado al carrito") 
         })
     })
 }
 getProducts()
+
+

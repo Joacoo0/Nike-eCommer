@@ -914,8 +914,24 @@ h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+p .cantidad {
+  color: red;
+}
+
 .eleminarProducto {
   cursor: pointer;
+}
+
+.cantidad-carrito {
+  background-color: #B70E21;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none;
 }
 
 .boton-comprar {

@@ -3,31 +3,36 @@
     "id": 7,
     "nombre": "camiseta de los lakers",
     "precio": 70,
-    "img": "../img-shop/img-camisetas/laker-nike.webp"
+    "img": "../img-shop/img-camisetas/laker-nike.webp",
+    "cantidad": 1
   },
   {
     "id": 8,
     "nombre": "camiseta jordan negra",
     "precio": 40,
-    "img": "../img-shop/img-camisetas/jordan-negra.webp"
+    "img": "../img-shop/img-camisetas/jordan-negra.webp",
+    "cantidad": 1
   },
   {
     "id": 8,
     "nombre": "camiseta nike blanca",
     "precio": 50,
-    "img": "../img-shop/img-camisetas/nike-blanca.webp"
+    "img": "../img-shop/img-camisetas/nike-blanca.webp",
+    "cantidad": 1
   },
   {
     "id": 8,
     "nombre": "camiseta nike rosa",
     "precio": 70,
-    "img": "../img-shop/img-camisetas/nike-rosa.webp"
+    "img": "../img-shop/img-camisetas/nike-rosa.webp",
+    "cantidad": 1
   },
   {
     "id": 8,
     "nombre": "camiseta del Psg blanca",
     "precio": 40,
-    "img": "../img-shop/img-camisetas/psg.webp"
+    "img": "../img-shop/img-camisetas/psg.webp",
+    "cantidad": 1
   }
 
 ]
