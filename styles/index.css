@@ -922,18 +922,6 @@ p .cantidad {
   cursor: pointer;
 }
 
-.cantidad-carrito {
-  background-color: #B70E21;
-  color: white;
-  border-radius: 50%;
-  font-size: 12px;
-  padding: 4px;
-  top: 37px;
-  right: 14px;
-  position: absolute;
-  display: none;
-}
-
 .boton-comprar {
   color: #313131;
   letter-spacing: 2px;
@@ -1188,6 +1176,15 @@ ul {
   background-color: #f9f9f9;
   color: #313131;
   transition: 0.5s;
+}
+.conteiner-shop .navbar-izq .nav a .cantidad-carrito {
+  background-color: #414141;
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 4px;
+  right: 14px;
+  position: absolute;
 }
 
 * {

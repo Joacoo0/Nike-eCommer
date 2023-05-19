@@ -3,7 +3,7 @@ const verCarrito = document.getElementById ("verCarrito")
 const modalContaner = document.getElementById("modal-content")
 const cantidadCarrito = document.getElementById("cantidadCarrito")
 
-const mensaje = (mensaje) =>{
+const mensaje = (mensaje) =>{ // mensaje cuando agregas al carrito
     Toastify({
         text: mensaje,
         duration: 1500,
@@ -17,7 +17,7 @@ const mensaje = (mensaje) =>{
 }
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || []
-//recorre productos y hace las tarjetas
+//recorre los productos y hace las tarjetas
 
 const getProducts = async () => {
     const response = await fetch("../data.json")
@@ -29,8 +29,8 @@ const getProducts = async () => {
         content.className = "targeta" // le crea la clase targeta al elemtno html
         content.innerHTML = ` 
             <img src="${product.img}">
-            <h3>${product.nombre}</h3>
-            <p class = "precio">${product.precio}$ </p>
+            <h3>${product.nombre}</h3> 
+            <p class = "precio">${product.precio}$ </p>  
         `
         shopProductos.append(content)
         let comprar = document.createElement("button") 
@@ -66,5 +66,6 @@ const getProducts = async () => {
     })
 }
 getProducts()
+localStorage.clear()
 
 

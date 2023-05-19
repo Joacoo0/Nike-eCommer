@@ -109,7 +109,16 @@
                     color: #313131;
                     transition: .5s;
                 }
-
+                .cantidad-carrito{
+                    background-color: #414141;
+                    color: white;
+                    border-radius: 20px;
+                    font-size: 20px;
+                    padding: 4px;
+                    right: 14px;
+                    position: absolute;
+                    // display: none;
+                  }
             }
         }
     }
